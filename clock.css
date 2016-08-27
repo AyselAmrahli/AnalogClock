@@ -1,0 +1,152 @@
+
+@keyframes rotate {
+	100% {
+		transform:rotateZ(360deg);
+	}
+}
+
+
+@font-face {
+	font-family: 'digi';
+	src: url('DS-DIGII.TTF');
+}
+
+
+body {
+	background-color: black;
+}
+
+
+.clock {
+	width: 400px;
+	height: 400px;
+	border:25px  ridge #e60000;
+	position: absolute;
+	top: 10%;
+	left: 30%;
+
+}
+.inClock {
+	width: 366px;
+	height: 366px;
+	border:10px dotted #e60000;
+    position: absolute;
+    top: 2%;
+	left: 2%;
+}
+
+.clockCenter {
+	width: 33px;
+	height: 33px;
+	background-color: #e60000;
+	z-index:5;
+	position: absolute;
+	top: 46.9%;
+	left: 45.2%;
+}
+
+.hours {
+	width: 10px;
+	height: 90px;
+	position: absolute;
+	top: 28%;
+	left: 48%;
+	z-index: 2;
+	transform-origin:4% 100%;
+	animation: rotate 43200s infinite linear;
+}
+
+.minutes {
+	width: 9px;
+	height: 179px;
+	position: absolute;
+	top: 10%;
+	left: 49%;
+	z-index: 3;
+	transform-origin:0% 93%;
+	animation: rotate 3600s infinite linear;
+
+}
+
+.seconds {
+	width: 3px;
+	height: 219px;
+	position: absolute;
+	top: 39.9%;
+	left: 48.7%;
+	z-index: 4;
+	transform-origin:80% 20%;
+	animation: rotate 60s infinite steps(60);
+}
+
+.weekDay {
+    top: 38%;
+	left: 15%;
+	font-size: 40px;
+}
+
+.month {
+	top: 40%;
+	left: 59%;
+	font-size: 35px;
+}
+.monthDay {
+	top: 40%;
+	left: 76%;
+	font-size: 35px;
+}
+
+.digClock {
+	top: 51%;
+	left: 30%;
+	font-size: 50px;
+
+}
+.semiDot {
+    top: 52%;
+	left: 47%;
+	font-size: 50px;
+}
+
+.digClockMin {
+    top: 51%;
+	left: 55.3%;
+	font-size: 50px;
+}
+
+.container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+
+
+
+
+/*Ortaq klasslar*/
+.borderAndColor {
+		border-radius: 5px;
+		background-color:#e60000;
+		opacity: 0.7;
+}
+
+.fontFam {
+	font-family: 'digi';
+}
+
+
+.colorPosit {
+	color: #e60000;
+	position: absolute;
+}
+
+.circle {
+	border-radius: 100%;
+}
+
+.fontBold {
+	font-weight: bold;
+}
